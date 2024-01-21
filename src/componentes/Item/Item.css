@@ -1,0 +1,21 @@
+.card{
+    color: wheat;
+    text-align: center;
+    background-color: rgba(51, 0, 0, 0.863);
+    width: max-content;
+    margin: 20px;
+    border-radius:20px 20px 0px 0px ;
+}
+.btn{
+    background-color: rgb(83, 0, 0);
+    border-radius: 20px 20px 0px 0px;
+    width: 87%;
+    min-height: 3vh;
+    color:whitesmoke;
+    border-color:brown;
+}
+.btn:hover{
+    background-color: rgb(37, 0, 0);
+    color: burlywood;
+    transition: 0.5s ;
+}

@@ -1,0 +1,15 @@
+.controles{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   font-size: 20px;
+   padding: 10px;
+}
+button{
+    background-color: rgba(88, 3, 3, 0.877);
+    color: whitesmoke;
+    border-radius: 20px;
+    margin: 20px;
+    border-color: rgb(168, 3, 3);
+    font-size: 16px;
+}
