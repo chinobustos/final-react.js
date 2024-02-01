@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useContext, useState } from 'react'
 import  './ItemDetail.css'
 import ItemCount from '../ItemCount/ItemCount'
+import { CartContext } from '../../contexto/CartContext'
 
-export const ItemDetail = ({producto}) => {
+const ItemDetail = ({producto}) => {
+  const {añadirProducto}=useContext(CartContext)
   const agregarAlCarrito =(contador) =>{
-  const productoEnCarrito =(contador, producto.nombre)
-  console.log(productoEnCarrito)
+  const productoNuevo =(contador, producto.nombre)
+  añadirProducto(productoNuevo)
   }
   return (
     <div className='detalles'>
@@ -13,6 +15,8 @@ export const ItemDetail = ({producto}) => {
         <p>{producto.nombre}</p>
         <p>${producto.precio}</p>
         <ItemCount stock={producto.stock} agregarAlCarrito={agregarAlCarrito} />
+        <div className="form">
+         </div>
     </div>
   )
 }

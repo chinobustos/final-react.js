@@ -41,16 +41,17 @@ a:hover{
   border-radius: 20px 20px 20px 20px ;
 }
 .cart{
-  font-size: 20px;
+  display: flex;
+  font-size: 15px;
+  color: burlywood;
 }
-.contador{
-  color: antiquewhite;
-  background-color: rgb(41, 0, 0);
-  width: 15px;
-  border-radius: 20px 20px 20px 20px;
-  align-items: flex-start;
-  text-align: center;
+.carrito{
+  width: 50px;
+  background-color: black;
+  height: max-content;
+  border-color:gray ;
 }
+
 
 img{
   width: 300px;
